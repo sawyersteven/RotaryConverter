@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net6.0-windows</TargetFramework>
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+        <ApplicationIcon>icon.ico</ApplicationIcon>
+        <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="mahapps.metro"
+                          Version="2.4.9"/>
+        <PackageReference Include="ReactiveMarbles.ObservableEvents.SourceGenerator"
+                          Version="1.1.4">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="ReactiveUI"
+                          Version="17.1.17"/>
+        <PackageReference Include="ReactiveUI.Fody"
+                          Version="17.1.17"/>
+        <PackageReference Include="ReactiveUI.WPF"
+                          Version="17.1.17"/>
+    </ItemGroup>
+</Project>

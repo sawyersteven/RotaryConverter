@@ -1,0 +1,28 @@
+<mah:MetroWindow x:Class="RotaryConverter.HelpDialog"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                 Title="Rotary Converter Help"
+                 ShowCloseButton="True"
+                 Width="350"
+                 SizeToContent="Height"
+                 Padding="5"
+                 WindowStartupLocation="CenterOwner"
+                 mc:Ignorable="d">
+    <StackPanel>
+        <RichTextBox IsReadOnly="true">
+            <FlowDocument>
+                <Paragraph FontSize="16">How to measure Rotary Length</Paragraph>
+                <Paragraph>
+            Attach your chuck-rotary to your laser. Using your control program (eg LightBurn), note the current position of the rotary axis.<LineBreak/>
+            Make a clear mark on the chuck and another stable reference point such as the metal bracket holding the chuck.<LineBreak/>
+            In your control program, move the rotary axis until it has made a full rotation and the marks are precisely aligned again.<LineBreak/>
+            Note the current position of the rotary axis.<LineBreak/>
+            Your Rotary Length is the absolute value of the current position minus the starting position of the axis.
+            </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+    </StackPanel>
+</mah:MetroWindow>
